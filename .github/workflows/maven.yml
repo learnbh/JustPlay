@@ -25,7 +25,7 @@ jobs:
     - name: Set up JDK   
       uses: actions/setup-java@v4
       with:
-        java-version: '23' ## Anpassung an unsere aktuelle Java-Version.
+        java-version: '21' ## Anpassung an unsere aktuelle Java-Version.
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
