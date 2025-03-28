@@ -12,9 +12,9 @@ on:
   workflow_dispatch:
 
   push:
-   # branches: [ "main" ] # wir wollen nicht, dass diese Action bei jedem Push ausgeführt wird
-  pull_request:
-    branches: [ "main" ]
+   # branches: [ "main" ] # wir wollen für jeden Branch CI ausführen, oder?programm is
+  #pull_request:
+  #  branches: [ "main" ]
 
 jobs:
   build:

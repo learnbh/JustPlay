@@ -1,16 +1,31 @@
 public class PlayerCharacter {
 
-    static int[] currentPosition = {0,0};
+    int[] currentPosition;
 
-    public static int getX() {
-        return currentPosition[0];
+    public String name;
+
+    public PlayerCharacter(String name) {
+        this.setName(name);
+        this.currentPosition = new int[] {0,0};
     }
 
-    public static int getY() {
-        return currentPosition[1];
+    public String getName() {
+        return this.name;
     }
 
-    public static int[] move(String w) {
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getX() {
+        return this.currentPosition[0];
+    }
+
+    public int getY() {
+        return this.currentPosition[1];
+    }
+
+    public int[] move(String w) {
         int[] pos = {getX(),getY()};
         switch (w) {
             case "W":
